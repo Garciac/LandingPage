@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chris</title>
+    <!-- Browsers read top to bottom. So we put custom files after the generic. -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Part of my websites content -->
+    <header>
+        <!-- Nav is short for navigation. Semantic statement. -->
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">&copy;Chris Garcia</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li class="active"><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <section>
+            <img src="img/me.jpg" alt="My Picture" class="profile-photo">
+            <h3>About</h3>
+            <p>Hello! My name is Chris Garcia! This is my student portfolio where I show all my work. I like to code and learn new things.</p>
+            <p>Feel free to contact me via Twitter, my username is <a href="http://www.twitter.com/chrisg1245">@chrisg1245 .</a></p>
+        </section>
+        <footer>
+            <!-- Absolute Path when it is absolutely necessary. Relative Paths whenever we ccan. -->
+            <a href="http://twitter.com/chrisg1245"><img src="img/twittericon.png" alt="Twitter Handle" class="social-media-icon"></a>
+            <!-- Go ahead and find your own social media link. Find a good icon and then put it  in the img folder
+          and then use a relative path and an absolute path to make it work! -->
+            <a href="http://www.instagram.com/chrisg1245"><img src="img/instagramicon.jpg" alt="Instagram Handle" class="social-media-icon"></a>
+            <p>&copy; 2015 Chris Garcia</p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

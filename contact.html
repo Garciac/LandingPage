@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chris</title>
+    <!-- Browsers read top to bottom. So we put custom files after the generic. -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Part of my websites content -->
+    <header>
+        <!-- Nav is short for navigation. Semantic statement. -->
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">&copy;Chris Garcia</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <section id="primary">
+            <h3>General Information</h3>
+            <p>I am currently a student at Pasadena High School.</p>
+            <p>My E-Mails and Twitter are ways to reach me.</p>
+        </section>
+        <section id="secondary">
+            <h3>Contact Details</h3>
+            <ul class="contact-info">
+                <li class="mail"><a href="mailto:chrisgarcia1245@gmail.com">chrisg1245@hotmail.com</a></li>
+                <li class="mail"><a href="mailto:chrisgarcia1245@gmail.com">chrisgarcia1245@gmail.com</a></li>
+                <li class="twitter"><a href="http://twitter.com/chrisg1245">@chrisg1245</a></li>
+            </ul>
+        </section>
+        <footer>
+            <!-- Absolute Path when it is absolutely necessary. Relative Paths whenever we ccan. -->
+            <a href="http://twitter.com/chrisg1245"><img src="img/twittericon.png" alt="Twitter Handle" class="social-media-icon"></a>
+            <!-- Go ahead and find your own social media link. Find a good icon and then put it  in the img folder
+          and then use a relative path and an absolute path to make it work! -->
+            <a href="http://www.instagram.com/chrisg1245"><img src="img/instagramicon.jpg" alt="Instagram Handle" class="social-media-icon"></a>
+            <p>&copy; 2015 Chris Garcia</p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

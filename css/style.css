@@ -1,0 +1,223 @@
+/*cssLint ids: false, box-model: false*/
+
+
+/********************************
+GENERAL
+********************************/
+
+
+/* Start http://www.cursors-4u.com */
+
+body,
+a:hover {
+    cursor: url(http://ani.cursors-4u.net/smiley/smi-3/smi310.cur), progress !important;
+}
+
+
+/* End http://www.cursors-4u.com */
+
+body {
+    background-image: url("http://31.media.tumblr.com/tumblr_lo5eikYc2M1qj73e2o1_500.gif");
+    background-size: cover;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#wrapper {
+    /*Margin 0 is for all sides*/
+    margin: 0 auto;
+    /*max-width is related to width. But instead of width, max-width that it can be smaller for mobile devices/tablets.*/
+    max-width: 940px;
+    /*Values first one is top and bottom. Second one is left and right.*/
+    padding: 0 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    margin: 0 0 1em 0;
+}
+
+
+/********************************
+HEADER
+********************************/
+
+
+/*header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+} */
+
+h1 {
+    color: gold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.75em;
+    margin: 15px 0;
+}
+
+h2 {
+    color: gold;
+    font-size: 0.75em;
+    font-weight: normal;
+    /*1st value is for top. 2nd value is for left and right. 3rd value is for the bottom.*/
+    margin: -5px 0 0;
+}
+
+
+/********************************
+Footer
+********************************/
+
+footer {
+    clear: both;
+    color: #ccc;
+    font-size: 0.75em;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.social-media-icon {
+    height: 30px;
+    margin: 0 5px;
+    width: 30px;
+}
+
+
+/********************************
+Page Portfolio
+********************************/
+
+#gallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#gallery li {
+    background-color: lightgrey;
+    color: #bdc3c7;
+    float: left;
+    margin: 2.5%;
+    width: 45%;
+}
+
+#gallery li a p {
+    color: black;
+    font-size: 0.753;
+    margin: 0;
+    padding: 5%;
+}
+
+
+/********************************
+About Me Page
+********************************/
+
+.profile-photo {
+    border-radius: 15%;
+    display: block;
+    max-width: 100px;
+}
+
+
+/********************************
+CONTACT PAGE
+********************************/
+
+.contact-info {
+    font-size: 0.9em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info a {
+    /* by default it will always repeat, background images*/
+    background-repeat: no-repeat;
+    /*re-size the background img*/
+    background-size: 20px 20px;
+    display: block;
+    margin: 0 0 10px;
+    min-height: 20px;
+    padding: 0 0 0 30px;
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/mail.png')
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twittericon.png')
+}
+
+
+/********************************
+COLORS
+********************************/
+
+body {
+    background-color: white;
+    color: #999;
+}
+
+a {
+    color: white;
+}
+
+
+/********************************
+MEDIA Queries
+********************************/
+
+
+/*TWO COLUMN LAYOUT*/
+
+@media screen and (min-width: 480px) {
+    #primary {
+        float: left;
+        width: 50%;
+    }
+    #secondary {
+        float: right;
+        width: 40%;
+    }
+    /*THREE COLUMB LAYOUT PORTFOLIO*/
+    #gallery li {
+        width: 28.3333%;
+    }
+    #gallery li:nth-child(4n) {
+        clear: left;
+    }
+    /**/
+    .profile-photo {
+        float: left;
+        margin: 0 5% 80px 0;
+    }
+}
+
+@media screen and (min-width: 660px) {
+    /*NAV*/
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.125em;
+        margin-right: 5%;
+        text-align: right;
+        width: 45%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 0.825em;
+        margin-bottom: 20px;
+    }
+}
